@@ -14,7 +14,6 @@ FROM orders
 WHERE ship_country = 'Germany';
 
 -- 4. минимальную и максимальную цену среди продуктов, не снятых с продажи (таблица products, колонки unit_price, discontinued не равно 1)
-SELECT * FROM products;
 SELECT MIN(unit_price), MAX(unit_price)
 FROM products
 WHERE discontinued != 1;
